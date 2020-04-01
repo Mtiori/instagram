@@ -1,0 +1,7 @@
+npm start   <- inicia o expo
+
+
+
+
+npm config set registry 	                <- erro de certificado
+npm install expo-cli --global               <- instalar expo
