@@ -12,7 +12,7 @@ import AddPhoto from '../pages/addPhoto';
 import NotificationScreen from '../pages/notification';
 import Search from '../pages/search';
 import Profile from '../pages/profile';
-import Post from '../pages/post';
+import Postagem from '../pages/post';
 
 export default class Routes extends React.Component {
   render() {
@@ -25,8 +25,10 @@ export default class Routes extends React.Component {
 }
 
 const FeedStack = createStackNavigator({
-  Feed: Feed,
-  Post: Post
+  Feed: {
+    screen: Feed,
+  },
+  OutrasPostagens: Postagem
 })
 
 const TabNavigator = createAppContainer(
